@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 1fr 2fr;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 2rem;
+  background-color: #e0e0e0;
+}
+
+.logo-img {
+  display: block;
+  max-width: 40%;
+}
+
+.home {
+  padding: 2rem 4rem;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.home-paragrafo {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-top: 2.3rem;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  background-color: #e0e0e0;
+  justify-content: space-around;
+  padding: 2rem 3rem;
+}
+
+.card {
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: 70px auto;
+  border-radius: 8px;
+  width: 350px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card1-titulo {
+  background-color: #303031;
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 1.5rem 1rem;
+  border-radius: 8px 8px 0px 0px;
+  font-weight: bold;
+}
+
+.card1-paragrafo {
+  font-size: 1.3rem;
+  line-height: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.card3 {
+  background-color: #384c64;
+}
+
+.card4 {
+  background-color: #8e8989;
+}
+
+@media (max-width: 1565px) {
+  .home-paragrafo {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
+  .home-cards {
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 3rem;
+  }
+  .card {
+    margin: 0 auto;
+  }
+  .logo-img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 1450px) {
+  .home {
+    padding: 2rem 2rem;
+  }
+  .home-paragrafo {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 587px) {
+  .logo-img {
+    max-width: 100%;
+  }
+  .home-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px;
+    padding: 1rem 0px;
+    gap: 1rem;
+  }
+  .home {
+    font-size: 1rem;
+  }
+
+  .home-paragrafo {
+    font-size: 1rem;
+    margin: 1.5rem 0px 1rem 0px;
+  }
+}
